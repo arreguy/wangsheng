@@ -1,7 +1,6 @@
 body {
     height: 100vh;
     margin: 0;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
@@ -22,7 +21,7 @@ body {
 }
 
 .secondary-text {
-    font-size: 18px;
+    font-size: 22px;
     color: #D1CDCE;
 }
 
@@ -70,10 +69,17 @@ body {
     display: flex;
     flex-direction: column;
     width: 400px;
+    padding: 32px;
 }
 
 .hero-image-container {
     display: flex;
+    padding: 32px;
+}
+
+.hero-text-container .secondary-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .signup {
@@ -99,18 +105,7 @@ body {
   text-transform: none;
   transform: translateZ(0);
   transition: all .2s,box-shadow .08s ease-in;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   width: 100px;
-}
-
-.signup:disabled {
-  cursor: default;
-}
-
-.signup:focus {
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
 }
 
 /* Content */
@@ -122,12 +117,15 @@ body {
     align-items: center;
     flex: 1;
     background-color: #FDF3E7;
+    padding-bottom: 32px;
 }
 
 .content-title {
-    font-weight: 900px;
+    font-weight: bold;
+    font-style: italic;
     font-size: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+    padding: 32px;
 }
 
 .content-container {
@@ -144,11 +142,42 @@ body {
     height: 200px;
 }
 
+.info .secondary-text {
+    color: #2b2020;
+    margin-top: 10px;
+}
+
+.info-title {
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+}
+
 /* Quote code */
 
 .quote {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex: 1;
+    padding: 50px;
+}
+
+.quote-text {
+    color: #D1CDCE;
+    font-style: italic;
+    font-size: 32px;
+    padding: 50px 100px 0px 100px;
+    width: 70%;
+} 
+
+.quote-credits {
+    color: #D4B98E;
+    font-size: 22px;
+    font-weight: 900;
+    align-self: flex-end;
+    margin-right: 300px;
 }
 
 /* Call to action code */
